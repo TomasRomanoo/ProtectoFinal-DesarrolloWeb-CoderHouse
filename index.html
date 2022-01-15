@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="cssbs/bootstrap.css">
+    <script src="jsbs/bootstrap.js"></script>  
+    
     <title>Document</title>
 </head>
 <body>
@@ -24,7 +27,46 @@
         </nav>
     </header>
     <!-- carrucel -->
-    <section id="Servicios">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="img/u5.jpg" class="d-block w-100 imgCarrucel imgCarrucel1" alt="...">
+            <div class="carousel-caption d-none d-md-block ">
+              <!-- <h3>Uñas Esculpidas con Esmaltado Semipermanente</h3> -->
+              <!-- Preguntar porque no deja modificar color letra y tamaño img -->
+              <p>Uñas Esculpidas con Esmaltado Semipermanente</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="img/u01.jpg" class="d-block w-100 imgCarrucel imgCarrucel2" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h3>Tipo de servicio2</h3> -->
+              <p>Uñas Soft Gel con Esmaltado Semipermanente</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="img/u03.jpg" class="d-block w-100 imgCarrucel imgCarrucel3 " alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h3>Tipo de servicio3</h3> -->
+              <p>Uñas con Esmaltado Tradicional</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- <section id="Servicios">
         <div class="contenedorImagen">
             <img src="img/u5.jpg" class="imagenEncabezado" alt="">
         </div>
@@ -32,19 +74,19 @@
             <h2>Servicios</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, animi ea architecto hic inventore ipsa officia repellat eos excepturi repudiandae dolorem fugit itaque odio ducimus, praesentium beatae autem facilis laudantium!</p>
         </div>
-    </section>
+    </section> -->
     <!-- galeria -->
     <section id="galeria">
         <div class="contenedor">
             <h2>Galeria</h2>
-            <p>clientas satisfechas (fotos de trabajos echos)</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, fugit doloribus perferendis minus consequuntur repudiandae commodi maxime quam beatae vero libero error provident earum ut soluta pariatur quaerat eum praesentium!</p>
         </div>
 
         <div class="gridPadre contenedor">
             <img src="img/u11.jpg" alt="" class="imagenGaleria imagenUno">
             <img src="img/u2.jpg" alt="" class="imagenGaleria imagenDos">
             <img src="img/u3.jpg" alt="" class="imagenGaleria imagenTres">
-            <img src="img/u4.jpg" alt="" class="imagenGaleria imagenCuatro">
+            <img src="img/u41.jpg" alt="" class="imagenGaleria imagenCuatro">
             <img src="img/u1.jpg" alt="" class="imagenGaleria imagenCinco">
             <img src="img/u6.jpg" alt="" class="imagenGaleria imagenSeis">
 
