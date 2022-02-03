@@ -1,0 +1,15 @@
+$vista: escritorio;
+
+@if($vista == escritorio) {
+    body{
+        background-color: grey;
+    }
+}@else if ($vista == movil) {
+    body{
+        background-color: black;
+    }
+}@else{
+    body{
+        background-color: white;
+    }
+}
