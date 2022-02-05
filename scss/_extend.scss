@@ -1,0 +1,9 @@
+.estiloGeneral {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.primerEstilo {
+    @extend .estiloGeneral;
+    font-size: 20px;
+}
