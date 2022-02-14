@@ -41,12 +41,12 @@ body header {
 }
 
 body header .botonera {
-  margin-right: 100px;
+  margin-right: 40px;
 }
 
 body header .botonera ul li {
   display: inline;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 body header .botonera ul li a {
@@ -54,7 +54,16 @@ body header .botonera ul li a {
   text-transform: uppercase;
   font-weight: bold;
   color: #f199e6;
-  font-size: 20px;
+  font-size: 17px;
+  border: solid 2px white;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+body header .botonera a:hover {
+  background-color: #959595;
+  -webkit-transition: 800ms;
+  transition: 800ms;
 }
 
 body header .logo {
