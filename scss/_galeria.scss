@@ -1,95 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-/* font-family: 'Roboto', sans-serif; */
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    /* background-color: rgb(110, 110, 110); */
-}
-
-header {
-background-color: rgb(110, 110, 110);
-width: 100%;
-height: 120px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-/* position: fixed; */
-
-}
-/* .footer{
-background-color: rgb(110, 110, 110);
-width: 100%;
-height: 60px;
-display: flex;
-padding: 20px;
-font-size: 20px;
-padding: 15px;
-font-weight: bold;
-justify-content:flex-end;
-} 
-
-i{
-    margin-left: 10px;
-    font-size: 30px;
-}  */
-
-.botonera{
-    margin-right: 100px;
-}
-
-.botonera ul li{
-    display: inline;
-    margin-left: 40px;
-        
-}
-
-.botonera ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: rgb(241, 153, 230);
-    font-size: 20px;
-    
-    
-}
-.logo{
-    margin-left: 20px;
-    border: solid white;
-    width: 25%;
-    
-}
-
-.contenedor{
-    text-align: center;
-    margin: 50px;
-    padding: 30px;
-    border: solid 1px black;
-    border-radius: 4px;
-}
-
-.contenedor h2{
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.contenedor p {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-.imagenEncabezado{
+.imagenGaleria{
     width: 100%;
-}
-
-
-/* .imagenGaleria{
-    width: 100%;
-    height: 250px;
-    z-index: 5;
+    height: 100%;
+    max-height: 250px;
+    max-width: 450px;
+    // z-index: 5;
 }
 .gridPadre{
     display: grid;
@@ -126,11 +40,11 @@ i{
 }
 .imagenSeis{
     grid-area: imagenSeis;
-} */
+}
 
 @media only screen and (max-width:599px){
 /* vista celu */
-/* .gridPadre{
+.gridPadre{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -161,12 +75,12 @@ i{
 }
 .imagenSeis{
     grid-area: imagenSeis;
-} */
+}
 }
 
 @media only screen and (min-width:600px) and (max-width:1023px){
 /* vista tablet */
-/* .gridPadre{
+.gridPadre{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -194,6 +108,5 @@ i{
 }
 .imagenSeis{
     grid-area: imagenSeis;
-} */
 }
-
+}
