@@ -189,12 +189,39 @@ body header {
   /* position: fixed; */
 }
 
+body header #btn-menu {
+  display: none;
+}
+
+body header label {
+  display: none;
+  font-size: 35px;
+  padding: 15px;
+  color: #f199e6;
+  border: solid 2px white;
+}
+
+body header label:hover {
+  cursor: pointer;
+  background-color: #525252;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
 body header .botonera {
   margin-right: 40px;
 }
 
+body header .botonera ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 body header .botonera ul li {
-  display: inline;
   margin-left: 20px;
 }
 
@@ -210,7 +237,7 @@ body header .botonera ul li a {
 }
 
 body header .botonera a:hover {
-  background-color: #959595;
+  background-color: #525252;
   -webkit-transition: 800ms;
   transition: 800ms;
 }
@@ -219,6 +246,8 @@ body header .logo {
   margin-left: 20px;
   border: solid white;
   width: 25%;
+  min-height: 90px;
+  min-width: 90px;
 }
 
 footer ul {
@@ -249,5 +278,41 @@ footer i:hover {
   border-radius: 5px;
   -webkit-transition: 600ms;
   transition: 600ms;
+}
+
+@media (max-width: 992px) {
+  body {
+    background-color: red;
+  }
+  body header label {
+    display: block;
+    position: end;
+  }
+  body header .botonera {
+    position: absolute;
+    z-index: 6;
+    background-color: #f50d0d;
+    width: 40%;
+    margin-top: 460px;
+    margin-left: -60%;
+  }
+  body header .botonera ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+  }
+  body header .botonera ul li {
+    display: block;
+    padding: 15px 20px;
+    margin: 5px;
+  }
+  body header #btn-menu:checked ~ .botonera {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=estilo.css.map */
