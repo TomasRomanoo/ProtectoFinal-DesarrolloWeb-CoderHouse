@@ -195,8 +195,9 @@ body header #btn-menu {
 
 body header label {
   display: none;
-  font-size: 35px;
-  padding: 15px;
+  font-size: 20px;
+  margin-right: 15px;
+  padding: 10px;
   color: #f199e6;
   border: solid 2px white;
 }
@@ -223,6 +224,7 @@ body header .botonera ul {
 
 body header .botonera ul li {
   margin-left: 20px;
+  border-left: solid 2px white;
 }
 
 body header .botonera ul li a {
@@ -230,13 +232,11 @@ body header .botonera ul li a {
   text-transform: uppercase;
   font-weight: bold;
   color: #f199e6;
-  font-size: 17px;
-  border: solid 2px white;
-  border-radius: 30px;
-  padding: 15px;
+  font-size: 18px;
+  margin: 5px;
 }
 
-body header .botonera a:hover {
+body header .botonera li:hover {
   background-color: #525252;
   -webkit-transition: 800ms;
   transition: 800ms;
@@ -281,9 +281,6 @@ footer i:hover {
 }
 
 @media (max-width: 992px) {
-  body {
-    background-color: red;
-  }
   body header label {
     display: block;
     position: end;
@@ -291,9 +288,9 @@ footer i:hover {
   body header .botonera {
     position: absolute;
     z-index: 6;
-    background-color: #f50d0d;
+    background-color: #6e6e6e;
     width: 40%;
-    margin-top: 460px;
+    margin-top: 415px;
     margin-left: -60%;
   }
   body header .botonera ul {
@@ -308,8 +305,10 @@ footer i:hover {
   }
   body header .botonera ul li {
     display: block;
-    padding: 15px 20px;
+    padding: 10px;
     margin: 5px;
+    border-left: none;
+    border-top: solid 2px white;
   }
   body header #btn-menu:checked ~ .botonera {
     margin-left: 0;
