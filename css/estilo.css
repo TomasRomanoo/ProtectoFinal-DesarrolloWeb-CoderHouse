@@ -187,6 +187,8 @@ body header {
       -ms-flex-align: center;
           align-items: center;
   /* position: fixed; */
+  background: -webkit-gradient(linear, right top, left top, from(#350f30), to(#6e6e6e));
+  background: linear-gradient(to left, #350f30, #6e6e6e);
 }
 
 body header #btn-menu {
