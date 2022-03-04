@@ -1,9 +1,0 @@
-// map
-$colNav:(
-    color:rgb(110, 110, 110),
-
-);
-// get
-header{
-    background-color: map-get($colNav, color );
-}

@@ -1,5 +1,17 @@
-header {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+body section i {
+  font-size: 50px;
+  margin-left: 30px;
+  padding: 20px;
+  color: #532062;
+}
+
+body section i:hover {
+  color: #ffffff;
   background-color: #6e6e6e;
+  border-radius: 50%;
+  -webkit-transition: 900ms;
+  transition: 900ms;
 }
 
 .imagenGaleria {
@@ -17,16 +29,6 @@ header {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
       grid-template-areas: "imagenUno imagenDos ImagenTres" " imagenCuatro imagenCinco imagenSeis";
-}
-
-.gridPadre1 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "imagenUno imagenDos";
 }
 
 .imagenUno {
@@ -151,23 +153,6 @@ header {
   }
 }
 
-.estiloGeneral, .primerEstilo {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-}
-
-.primerEstilo {
-  font-size: 20px;
-}
-
-.contenedor {
-  text-align: center;
-  margin: 50px;
-  padding: 30px;
-  border: solid 1px black;
-  border-radius: 4px;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -227,6 +212,7 @@ body header .botonera ul {
 body header .botonera ul li {
   margin-left: 20px;
   border-left: solid 2px white;
+  list-style: none;
 }
 
 body header .botonera ul li a {
@@ -244,6 +230,12 @@ body header .botonera li:hover {
   transition: 800ms;
 }
 
+body header .botonera li:hover a {
+  color: white;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
 body header .logo {
   margin-left: 20px;
   border: solid white;
@@ -252,7 +244,32 @@ body header .logo {
   min-width: 90px;
 }
 
-footer ul {
+body .carousel {
+  max-width: 1200px;
+  margin: auto;
+}
+
+body .contenedor {
+  text-align: center;
+  margin: 50px;
+  padding: 30px;
+  border: solid 1px #8f8e8e;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px #8f8f8f;
+          box-shadow: 2px 2px #8f8f8f;
+}
+
+body .contenedor h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+body .contenedor p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+body footer ul {
   background-color: #6e6e6e;
   width: 100%;
   height: 60px;
@@ -268,14 +285,14 @@ footer ul {
           justify-content: flex-end;
 }
 
-footer i {
+body footer i {
   margin-left: 10px;
   font-size: 30px;
   text-decoration: none;
   color: black;
 }
 
-footer i:hover {
+body footer i:hover {
   background-color: #868686;
   border-radius: 5px;
   -webkit-transition: 600ms;
@@ -290,7 +307,8 @@ footer i:hover {
   body header .botonera {
     position: absolute;
     z-index: 6;
-    background-color: #6e6e6e;
+    background: -webkit-gradient(linear, right bottom, left top, from(#350f30), to(#6e6e6e));
+    background: linear-gradient(to top left, #350f30, #6e6e6e);
     width: 40%;
     margin-top: 415px;
     margin-left: -60%;

@@ -1,0 +1,17 @@
+body{
+    section{
+        i{
+            font-size: 50px;
+            margin-left: 30px;
+            padding: 20px;
+            color: rgb(83, 32, 98);
+            
+        }
+        i:hover{
+            color: #ffffff;
+            background-color: rgb(110,110,110);
+            border-radius: 50%;
+            transition: 900ms;
+        }
+    }
+}
