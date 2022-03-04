@@ -3,10 +3,9 @@
     height: 100%;
     max-height: 250px;
     max-width: 450px;
-    padding: 5px; 
+    padding: 5px;
 }
 .gridPadre{
-    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;

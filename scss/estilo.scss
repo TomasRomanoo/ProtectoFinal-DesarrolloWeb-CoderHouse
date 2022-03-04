@@ -2,6 +2,10 @@
 @import "galeria";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -34,14 +38,15 @@ body{
 
         .botonera{
             margin-right: 40px;
+            
         ul{
             display: flex;
             justify-content: flex-end;
+            
             li{
                 margin-left: 20px;
                 border-left: solid 2px white;
                 list-style: none;
-
                 a{
                 text-decoration: none;
                 text-transform: uppercase;
@@ -74,10 +79,11 @@ body{
 
     .carousel  {
         max-width: 1200px;
-        margin: auto;    
+        margin: auto; 
+        
     }
 
-    
+
     .contenedor{
         text-align: center;
         margin: 50px;
@@ -96,24 +102,31 @@ body{
     }
     
 
+.contPromo{
+    height: 60vh;
+
+}
+
 footer{
-        
+    
+    
     ul{
         background-color: rgb(110, 110, 110);
-        width: 100%;
         height: 60px;
         display: flex;
         padding: 20px;
         font-size: 20px;
-        padding: 15px;
         font-weight: bold;
         justify-content:flex-end;
+        align-items: center;
+        
     }
     i{
             margin-left: 10px;
             font-size: 30px;
             text-decoration: none;
             color: black;
+            
         }
         i:hover {
             background-color: rgb(134, 134, 134);
