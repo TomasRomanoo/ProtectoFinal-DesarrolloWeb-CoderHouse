@@ -19,6 +19,7 @@ body section i:hover {
   height: 100%;
   max-height: 250px;
   max-width: 450px;
+  padding: 5px;
 }
 
 .gridPadre {
@@ -171,7 +172,6 @@ body header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* position: fixed; */
   background: -webkit-gradient(linear, right top, left top, from(#350f30), to(#6e6e6e));
   background: linear-gradient(to left, #350f30, #6e6e6e);
 }
